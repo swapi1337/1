@@ -1,0 +1,23 @@
+﻿<Window x:Name="Create" x:Class="RPG.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RPG"
+        mc:Ignorable="d"
+        Title="Create" Height="353.572" Width="292.973">
+    <Grid>
+        <ComboBox x:Name="cbClass" HorizontalAlignment="Left" Margin="62,64,0,0" VerticalAlignment="Top" Width="180" Height="34" SelectedIndex="0" SelectionChanged="cbClass_SelectionChanged">
+            <ComboBoxItem Content="Warrior"/>
+            <ComboBoxItem Content="Sniper"/>
+            <ComboBoxItem Content="Mage"/>
+            <ComboBoxItem Content="Rogue"/>
+            <ComboBoxItem Content="Berserk"/>
+            <ComboBoxItem Content="Chaos"/>
+            <ComboBoxItem Content="Assasin"/>
+        </ComboBox>
+        <TextBox x:Name="tbName" HorizontalAlignment="Left" Height="40" Margin="62,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" />
+        <Button x:Name="Create1" Content="Create" HorizontalAlignment="Left" Margin="100,216,0,0" VerticalAlignment="Top" Width="100" Height="32" Click="Create1_Click"/>
+
+    </Grid>
+</Window>
